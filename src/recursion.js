@@ -7,6 +7,12 @@
 // Example: 5! = 5 x 4 x 3 x 2 x 1 = 120
 // factorial(5); // 120
 var factorial = function(n) {
+
+  if (n === 1 || n == 0) {
+    return n;
+  }
+
+  return factorial(n - 1) * factorial(n - 2)
 };
 
 // 2. Compute the sum of an array of integers.
@@ -41,6 +47,8 @@ var range = function(x, y) {
 // https://www.khanacademy.org/computing/computer-science/algorithms/recursive-algorithms/a/computing-powers-of-a-number
 var exponent = function(base, exp) {
 };
+
+//
 
 // 8. Determine if a number is a power of two.
 // powerOfTwo(1); // true
